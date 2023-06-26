@@ -1,1 +1,4 @@
-return;
+function Main(){
+
+}
+export default Main;

@@ -1,9 +1,8 @@
-import Logo from './'
-
-function Nav(){
+function Nav(props){
+    return(
     <nav>
         <ul>
-            <img src="Logo"/>
+            <img src={props.img}/>
             <li><a href=""/>HOME</li>
             <li><a href=""/>ABOUT</li>
             <li><a href=""/>MENU</li>
@@ -12,5 +11,6 @@ function Nav(){
             <li><a href=""/>LOGIN</li>
         </ul>
     </nav>
+    )
 }
 export default Nav;
