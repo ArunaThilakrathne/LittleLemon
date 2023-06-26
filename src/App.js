@@ -1,11 +1,14 @@
-
 import './App.css';
-
+import Comp from './Components'
 function App() {
   return (
-    <div className="App">
-      Home page
-    </div>
+    //<></> react fragment 
+    <>
+    <Comp.Nav/>
+    <Header/>
+    <Main/>
+    <Footer/>
+    </>
   );
 }
 
