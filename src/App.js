@@ -3,11 +3,14 @@ import Footer from './Components/Footer.js';
 import Nav from './Components/Nav.js';
 import Header from './Components/Header.js';
 import Main from './Components/Main.js';
-import Logo from './Logo .svg'
+import Logo from './Images/Logo .svg'
+import Testimonials from './Components/Testimonials';
+import About from './Components/About';
 function App() {
   return (
     //<></> react fragment
-    <>
+   <>
+   <div className="main-grid">
     {/*summary of what a given page is about*/}
     <meta name="description" content="Little Lemon Restaurant"/>
 
@@ -19,12 +22,16 @@ function App() {
 
     {/* specifies the image to serve when a link is shared on social media.  */}
     <meta name="og:image" content={Logo}/>
-
+    
     <Nav img={Logo}/>
     <Header/>
     <Main/>
+    <Testimonials/>
+    <About/>
     <Footer/>
+    </div>
     </>
+
   );
 }
 

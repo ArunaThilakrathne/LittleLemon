@@ -1,0 +1,89 @@
+.cparent {
+    display: grid;
+    grid-template-columns: repeat(12, 2fr);
+    margin-top: 30px;
+    width:313px;
+    background-color: #edefee;
+    border-radius: 20px 20px 0px 0px;
+}
+.csparent {
+    display: grid;
+    grid-template-columns: repeat(12, 2fr);
+    margin-top: 30px;
+    width:313px;
+    background-color:white;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.csegment {
+    display: grid;
+    place-items: left;
+    text-align: left;
+    padding: 10px;
+     /* grid-template-rows: 50px;   */
+}
+
+.ctwelve {
+    grid-column: 1/ span 12; /* Start from the 1st colum across 12 columns */
+}
+
+.csix {
+    grid-column: 4/ span 6; /* Start from the 5th column across 8 columns */
+}
+
+.cfour {
+    grid-column: 1/ span 4; /* Start from the 1st column across 4 columns */
+}
+
+
+.cseven {
+    background-color: lightcoral;
+    grid-column: 3/ span 7; /* Start from the 3rd column across 7 columns */
+}
+
+.cthreetoten{
+    grid-column: 3/ span 10;
+}
+
+.conetoeight{
+    grid-column: 1/ span 8;
+}
+
+.cninetotwelve{
+    grid-column: 9/ span 12;
+}
+.ceighttoeleven{
+    grid-column: 8/ span 11;
+}
+
+.conetotwo{
+    grid-column: 1/ span 2;
+}
+.cthreetofour{
+    grid-column: 3/ span 4;
+}
+/* start colums /span no of columns */
+.cfivetosix{
+    grid-column: 5/ span 1;
+}
+
+.cseventoeight{
+    grid-column: 7/span 1;
+}
+.ctwotofour{
+    grid-column: 2/ span 4;
+}
+@media (max-width:1000px){
+    .cparent {
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        /* padding-left: 40px; */
+        margin-top: 20px;
+    }
+    .cninetotwelve{
+        grid-column: 1/ span 4;
+    }
+}
+
